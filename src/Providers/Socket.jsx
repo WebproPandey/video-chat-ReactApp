@@ -10,7 +10,7 @@ export const useSocket = () => {
 
 // Provider component to provide the socket context
 export const SocketProvider = (props) => {
-  const socket = useMemo(() => io("http://localhost:5001"), []); // Using correct URL and adding dependency array
+  const socket = useMemo(() => io("http://localhost:5001"), []); 
 
   return (
     <SocketContext.Provider value={{ socket }}>
